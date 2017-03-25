@@ -1,0 +1,6 @@
+# Android Working with Runtime Permissions Request
+With the release of Android 6.0 Marshmallow, Google has introduced a new concept of permissions model which are handled by the app. According to this new concept now apps would have to request permissions from the users at the run time and also allows the user to deny the permission at runtime. In this tutorial, we’ll look into the new runtime permissions and learn how to handle them. If not handled properly, it can cause application crashes with the security exception.
+
+Understanding Android Run Time Permissions
+
+System permissions of Android 6.0 Marshmallow are divided into two categories, Normal and Dangerous. To access either of these two permissions, the first step is to declare them in the AndroidManifest. And the difference is that dangerous permissions are granted by the user at run time. If the device is running Android 5.1 Lollipop (API level 22) or lower, or the app’s targetSdkVersion is 22 or lower, the system asks the user to grant the permissions in a group which the app needs at install time, not the individual permissions. If the device is running Android 6.0 or higher, and your app’s target SDK is 23 or higher, the user can grant or deny each permission, and the app can continue to run with limited capabilities even if the user denies a permission request.
